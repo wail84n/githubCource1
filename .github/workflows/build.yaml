@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - xcode: "13.2.1"
+          - xcode: "14.2"
             ios: "16.2"
     name: test iOS (${{ matrix.ios }})
     steps:

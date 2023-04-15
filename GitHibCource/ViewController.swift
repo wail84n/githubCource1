@@ -23,12 +23,5 @@ class ViewController: UIViewController {
         }
     }
     
-    func validateValue2(value: Int)-> Bool {
-        if value > 10{
-            return true
-        }else{
-            return false
-        }
-    }
 }
 

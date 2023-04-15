@@ -16,6 +16,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_$.app && /usr/bin/xcodebuild -version
+      run: sudo xcode-select -switch /Applications/Xcode_${{ matrix.xcode }}.app && /usr/bin/xcodebuild -version
     - name: Run unit tests
-      run: xcodebuild test -scheme GitHibCource -project GitHibCource.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 12,OS=$' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild test -scheme GitHibCource -project GitHibCource.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 12,OS=${{ matrix.ios }}' | xcpretty && exit ${PIPESTATUS[0]}

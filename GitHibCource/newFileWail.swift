@@ -9,5 +9,5 @@ import Foundation
 
 
 struct NewFile{
-    
+    let name: String = "name"
 }

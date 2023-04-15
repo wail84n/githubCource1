@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D107D85929EAB9F60029B195 /* newFileWail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D107D85829EAB9F60029B195 /* newFileWail.swift */; };
+		D107D86229EAE1E20029B195 /* GitHibCourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D107D86129EAE1E20029B195 /* GitHibCourceTests.swift */; };
+		D107D86929EAE76D0029B195 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D107D86829EAE76D0029B195 /* ViewControllerTest.swift */; };
 		D1A1E1A029EAB4EA0047804A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1E19F29EAB4EA0047804A /* AppDelegate.swift */; };
 		D1A1E1A229EAB4EA0047804A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1E1A129EAB4EA0047804A /* SceneDelegate.swift */; };
 		D1A1E1A429EAB4EA0047804A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1E1A329EAB4EA0047804A /* ViewController.swift */; };
@@ -16,8 +18,21 @@
 		D1A1E1AC29EAB4ED0047804A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A1E1AA29EAB4ED0047804A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D107D86329EAE1E20029B195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1A1E19429EAB4EA0047804A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1A1E19B29EAB4EA0047804A;
+			remoteInfo = GitHibCource;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		D107D85829EAB9F60029B195 /* newFileWail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newFileWail.swift; sourceTree = "<group>"; };
+		D107D85F29EAE1E20029B195 /* GitHibCourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHibCourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D107D86129EAE1E20029B195 /* GitHibCourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHibCourceTests.swift; sourceTree = "<group>"; };
+		D107D86829EAE76D0029B195 /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
 		D1A1E19C29EAB4EA0047804A /* GitHibCource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHibCource.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A1E19F29EAB4EA0047804A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1A1E1A129EAB4EA0047804A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D107D85C29EAE1E20029B195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1A1E19929EAB4EA0047804A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +61,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D107D86029EAE1E20029B195 /* GitHibCourceTests */ = {
+			isa = PBXGroup;
+			children = (
+				D107D86129EAE1E20029B195 /* GitHibCourceTests.swift */,
+				D107D86829EAE76D0029B195 /* ViewControllerTest.swift */,
+			);
+			path = GitHibCourceTests;
+			sourceTree = "<group>";
+		};
 		D1A1E19329EAB4EA0047804A = {
 			isa = PBXGroup;
 			children = (
 				D1A1E19E29EAB4EA0047804A /* GitHibCource */,
+				D107D86029EAE1E20029B195 /* GitHibCourceTests */,
 				D1A1E19D29EAB4EA0047804A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				D1A1E19C29EAB4EA0047804A /* GitHibCource.app */,
+				D107D85F29EAE1E20029B195 /* GitHibCourceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +106,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D107D85E29EAE1E20029B195 /* GitHibCourceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D107D86529EAE1E20029B195 /* Build configuration list for PBXNativeTarget "GitHibCourceTests" */;
+			buildPhases = (
+				D107D85B29EAE1E20029B195 /* Sources */,
+				D107D85C29EAE1E20029B195 /* Frameworks */,
+				D107D85D29EAE1E20029B195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D107D86429EAE1E20029B195 /* PBXTargetDependency */,
+			);
+			name = GitHibCourceTests;
+			productName = GitHibCourceTests;
+			productReference = D107D85F29EAE1E20029B195 /* GitHibCourceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D1A1E19B29EAB4EA0047804A /* GitHibCource */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1A1E1B029EAB4ED0047804A /* Build configuration list for PBXNativeTarget "GitHibCource" */;
@@ -100,6 +151,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					D107D85E29EAE1E20029B195 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D1A1E19B29EAB4EA0047804A;
+					};
 					D1A1E19B29EAB4EA0047804A = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -119,11 +174,19 @@
 			projectRoot = "";
 			targets = (
 				D1A1E19B29EAB4EA0047804A /* GitHibCource */,
+				D107D85E29EAE1E20029B195 /* GitHibCourceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D107D85D29EAE1E20029B195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1A1E19A29EAB4EA0047804A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +200,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D107D85B29EAE1E20029B195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D107D86929EAE76D0029B195 /* ViewControllerTest.swift in Sources */,
+				D107D86229EAE1E20029B195 /* GitHibCourceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1A1E19829EAB4EA0047804A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,6 +221,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D107D86429EAE1E20029B195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1A1E19B29EAB4EA0047804A /* GitHibCource */;
+			targetProxy = D107D86329EAE1E20029B195 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D1A1E1A529EAB4EB0047804A /* Main.storyboard */ = {
@@ -170,6 +250,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D107D86629EAE1E20029B195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74YH76FB8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatayab.leakDataProject.GitHibCourceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHibCource.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GitHibCource";
+			};
+			name = Debug;
+		};
+		D107D86729EAE1E20029B195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74YH76FB8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatayab.leakDataProject.GitHibCourceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHibCource.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GitHibCource";
+			};
+			name = Release;
+		};
 		D1A1E1AE29EAB4ED0047804A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -343,6 +459,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D107D86529EAE1E20029B195 /* Build configuration list for PBXNativeTarget "GitHibCourceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D107D86629EAE1E20029B195 /* Debug */,
+				D107D86729EAE1E20029B195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D1A1E19729EAB4EA0047804A /* Build configuration list for PBXProject "GitHibCource" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

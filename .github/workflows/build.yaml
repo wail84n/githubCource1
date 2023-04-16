@@ -10,6 +10,8 @@ jobs:
         include:
           - xcode: "14.2"
             ios: "16.2"
+          - xcode: "13.1"
+            ios: "15.0"
     name: test iOS (${{ matrix.ios }})
     steps:
     - uses: actions/checkout@v1

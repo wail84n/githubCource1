@@ -10,6 +10,7 @@
 		D107D85929EAB9F60029B195 /* newFileWail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D107D85829EAB9F60029B195 /* newFileWail.swift */; };
 		D107D86229EAE1E20029B195 /* GitHibCourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D107D86129EAE1E20029B195 /* GitHibCourceTests.swift */; };
 		D107D86929EAE76D0029B195 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D107D86829EAE76D0029B195 /* ViewControllerTest.swift */; };
+		D1276A3D2A02EA60005C6A96 /* secondFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1276A3C2A02EA60005C6A96 /* secondFile.swift */; };
 		D1831EB62A02E803009D13A6 /* newFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1831EB52A02E803009D13A6 /* newFile.swift */; };
 		D1A1E1A029EAB4EA0047804A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1E19F29EAB4EA0047804A /* AppDelegate.swift */; };
 		D1A1E1A229EAB4EA0047804A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1E1A129EAB4EA0047804A /* SceneDelegate.swift */; };
@@ -34,6 +35,7 @@
 		D107D85F29EAE1E20029B195 /* GitHibCourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHibCourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D107D86129EAE1E20029B195 /* GitHibCourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHibCourceTests.swift; sourceTree = "<group>"; };
 		D107D86829EAE76D0029B195 /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
+		D1276A3C2A02EA60005C6A96 /* secondFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondFile.swift; sourceTree = "<group>"; };
 		D1831EB52A02E803009D13A6 /* newFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newFile.swift; sourceTree = "<group>"; };
 		D1A1E19C29EAB4EA0047804A /* GitHibCource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHibCource.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A1E19F29EAB4EA0047804A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				D1A1E1AD29EAB4ED0047804A /* Info.plist */,
 				D107D85829EAB9F60029B195 /* newFileWail.swift */,
 				D1831EB52A02E803009D13A6 /* newFile.swift */,
+				D1276A3C2A02EA60005C6A96 /* secondFile.swift */,
 			);
 			path = GitHibCource;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				D1A1E1A229EAB4EA0047804A /* SceneDelegate.swift in Sources */,
 				D1831EB62A02E803009D13A6 /* newFile.swift in Sources */,
 				D107D85929EAB9F60029B195 /* newFileWail.swift in Sources */,
+				D1276A3D2A02EA60005C6A96 /* secondFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

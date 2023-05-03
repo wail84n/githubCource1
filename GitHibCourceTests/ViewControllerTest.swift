@@ -23,7 +23,7 @@ final class ViewControllerTest: XCTestCase {
     }
     
     func testValidateValue(){
-        XCTAssertEqual(true, sut?.validateValue(value: 9))
+        XCTAssertEqual(true, sut?.validateValue(value: 10))
     }
 
     func testExample() throws {

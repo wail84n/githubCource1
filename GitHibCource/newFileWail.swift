@@ -7,8 +7,7 @@
 
 import Foundation
 
-
-struct NewFile{
+struct NewFile {
     let name: String = "name"
     let name2: String = "namewe"
 }

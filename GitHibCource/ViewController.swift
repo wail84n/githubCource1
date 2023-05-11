@@ -7,6 +7,10 @@
 
 import UIKit
 
+enum WaelTest {
+    case case1
+    case case2
+}
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,13 +19,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    func validateValue(value: Int)-> Bool {
-        if value > 10{
+    func validateValue(value: Int) -> Bool {
+        if value > 10 {
             return true
-        }else{
+        } else {
             return false
         }
     }
-    
 }
-

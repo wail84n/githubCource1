@@ -10,7 +10,7 @@ import XCTest
 
 final class ViewControllerTest: XCTestCase {
 
-    var sut: ViewController? = nil
+    var sut: ViewController?
     override func setUp() {
         sut = ViewController()
     }
@@ -21,8 +21,7 @@ final class ViewControllerTest: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-    
-    func testValidateValue(){
+    func testValidateValue() {
         XCTAssertEqual(true, sut?.validateValue(value: 11))
     }
 
@@ -31,7 +30,8 @@ final class ViewControllerTest: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        // Mark your test async to allow awaiting for asynchronous code to
+        // complete. Check the results with assertions afterwards.
     }
 
     func testPerformanceExample() throws {

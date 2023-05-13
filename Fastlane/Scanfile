@@ -4,7 +4,7 @@
 workspace "GitHibCource.xcodeproj/project.xcworkspace"
 scheme "GitHibCource"
 sdk "iphonesimulator"
-device "iPhone 11"
+device "Any iOS Device"
 code_coverage true
 xcargs '-parallelizeTargets'
 prelaunch_simulator true

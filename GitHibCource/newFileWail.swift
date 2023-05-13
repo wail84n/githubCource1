@@ -10,5 +10,5 @@ import Foundation
 struct NewFile {
     let name: String = "name"
     let name2: String = "namewe"
-    let dd: String = ""
+    let familyName: String = ""
 }

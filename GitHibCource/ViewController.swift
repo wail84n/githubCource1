@@ -8,10 +8,10 @@
 import UIKit
 
 enum WaelTest {
-    case Case1
-    case Case2
+    case case1
+    case case2
 }
-class ViewController: UIViewController{
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

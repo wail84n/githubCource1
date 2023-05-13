@@ -8,9 +8,9 @@ target 'GitHibCource' do
   # Pods for GitHibCource
 pod 'SwiftLint'
 
-  target 'GitHibCourceTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+#  target 'GitHibCourceTests' do
+#    inherit! :search_paths
+#    # Pods for testing
+#  end
 
 end

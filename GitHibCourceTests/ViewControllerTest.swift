@@ -22,7 +22,7 @@ final class ViewControllerTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     func testValidateValue() {
-        XCTAssertEqual(true, sut?.validateValue(value: 9))
+        XCTAssertEqual(true, sut?.validateValue(value: 11))
     }
 
     func testExample() throws {

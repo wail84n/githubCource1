@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55B36726C28574A593D777C5 /* Pods_GitHibCourceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3C2CA1B61B90E4578F9FB1 /* Pods_GitHibCourceTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		55B36726C28574A593D777C5 /* Pods_GitHibCourceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3C2CA1B61B90E4578F9FB1 /* Pods_GitHibCourceTests.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D107D85929EAB9F60029B195 /* newFileWail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D107D85829EAB9F60029B195 /* newFileWail.swift */; };
 		D107D86229EAE1E20029B195 /* GitHibCourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D107D86129EAE1E20029B195 /* GitHibCourceTests.swift */; };
 		D107D86929EAE76D0029B195 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D107D86829EAE76D0029B195 /* ViewControllerTest.swift */; };
@@ -20,7 +20,6 @@
 		D1A1E1A729EAB4EB0047804A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A1E1A529EAB4EB0047804A /* Main.storyboard */; };
 		D1A1E1A929EAB4ED0047804A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A1E1A829EAB4ED0047804A /* Assets.xcassets */; };
 		D1A1E1AC29EAB4ED0047804A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A1E1AA29EAB4ED0047804A /* LaunchScreen.storyboard */; };
-		E14130FC94DED8BBB5909C36 /* Pods_GitHibCource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E041CF05D81093FAFBC56A3 /* Pods_GitHibCource.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E14130FC94DED8BBB5909C36 /* Pods_GitHibCource.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,38 +1,28 @@
-name: iOS binary build & upload
- 
+name: WaelTest332
+
 on: [push]
  
 jobs:
- deploy:
-   runs-on: macos-latest
-   steps:
-     - uses: actions/checkout@v2
- 
-     - name: Set up ruby env
-       uses: ruby/setup-ruby@v1.138.0
-       with:
-         ruby-version: 3.2.1
-         bundler-cache: true
- 
-      - name: Decode signing certificate into a file
-        env:
-         CERTIFICATE_BASE64: ${{ secrets.IOS_DIST_SIGNING_KEY }}
-        run: |
-         echo $CERTIFICATE_BASE64 | base64 --decode > signing-cert.p12
-    
-     - name: Build & upload iOS binary
-       run: bundle exec fastlane ios build_upload_testflight
-       env:
-         ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
-         ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
-         ASC_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
-         SIGNING_KEY_PASSWORD: ${{ secrets.IOS_DIST_SIGNING_KEY_PASSWORD }}
-         SIGNING_KEY_FILE_PATH: signing-cert.p12
- 
-     - name: Upload app-store ipa and dsyms to artifacts
-       uses: actions/upload-artifact@v2
-       with:
-         name: app-store ipa & dsyms
-         path: |
-           ${{ github.workspace }}/example-iOS.ipa
-           ${{ github.workspace }}/*.app.dSYM.zip
+  run_tests:
+    runs-on: macos-12
+    strategy:
+      matrix:
+        include:
+          - xcode: "14.2"
+            ios: "16.2"
+          - xcode: "14.2"
+            ios: "16.2"
+    name: test iOS (${{ matrix.ios }})
+    steps:
+    - uses: actions/checkout@v1
+    - name: Cancel Previous Runs
+      uses: styfle/cancel-workflow-action@0.9.1
+    - name: CocoaPod Install
+      run: pod install
+    - name: Lint code using SwiftLint
+      run: swiftlint lint --reporter github-actions-logging
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_${{ matrix.xcode }}.app && /usr/bin/xcodebuild -version
+    - name: Run unit tests
+      run: xcodebuild clean build analyze test -scheme GitHibCource -project GitHibCource.xcodeproj  -destination 'platform=iOS Simulator,name=iPhone 11,OS=${{ matrix.ios }}' 
+      

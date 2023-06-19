@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("waeccl")
+        print("waecclcc ")
         // Do any additional setup after loading the view.
     }
 

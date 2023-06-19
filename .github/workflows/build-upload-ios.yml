@@ -1,7 +1,6 @@
 name: iOS binary build & upload
  
-on:
-    workflow_dispatch:
+on: [push]
  
 jobs:
  deploy:
@@ -26,7 +25,7 @@ jobs:
        env:
          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
-         ASC_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+         ASC_KEY: ${{ secrets.ASC_KEY }}
          SIGNING_KEY_PASSWORD: ${{ secrets.IOS_DIST_SIGNING_KEY_PASSWORD }}
          SIGNING_KEY_FILE_PATH: signing-cert.p12
  
